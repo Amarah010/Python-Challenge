@@ -1,7 +1,8 @@
 import csv
-import os
+import os 
 
 #Set path for csv file - absolute path was used for development - has been changed to relative path for GitHub
+relative_path = "../Starter_Code/PyBank/Resources/budget_data.csv"
 
 #Initialise variables
 
@@ -10,7 +11,7 @@ import os
 
 
 #Read the CSV file and store the header
-with open (budget_data, "r") as csvfile:
+with open ("budget_data", "r") as csvfile:
     csv_reader = csv.reader(csvfile, delimiter=",")
     header = next(csv_reader)
 
